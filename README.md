@@ -9,7 +9,6 @@ PT监控器，可以获取多个下载器，支持TR和QB，可以在线操作�
 ![65fbac23-a50e-4d06-9312-7d17284a42f6](https://github.com/user-attachments/assets/5914b03d-f65c-4c4f-bc13-1ec58fa4cd32)
 ![f9a22e23-d536-46b8-857c-6f3363f3fe4e](https://github.com/user-attachments/assets/245e2af6-491c-491c-881d-bda0ef411983)
 ![4827b6a6-42f4-4546-b657-b942165e74be](https://github.com/user-attachments/assets/bcb6634b-e2ac-4a7e-b12e-ed74f3b11dd1)
-![d94b4bd5-6d2b-4dfa-bf83-1bd5630e4eeb](https://github.com/user-attachments/assets/13b3a0f6-c1e6-447f-865e-7f46364b49f1)
 ![c571c624-437a-4f90-bef3-433fc10b66ca](https://github.com/user-attachments/assets/90a76050-228c-4a46-acec-dbf46b45d6f5)
 
 默认账户：admin
