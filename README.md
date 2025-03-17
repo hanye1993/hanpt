@@ -1,137 +1,20 @@
-# ThinkPHP应用框架
 
-这是一个基于PHP的MVC框架，提供了用户认证、数据库操作、主题切换等功能。
 
-## 目录结构
-
-```
-├── app                     # 应用程序目录
-│   ├── config              # 配置文件
-│   ├── controllers         # 控制器
-│   ├── helpers             # 辅助类
-│   ├── models              # 模型
-│   └── views               # 视图
-│       ├── components      # 组件
-│       ├── layouts         # 布局
-│       └── pages           # 页面
-├── database                # 数据库相关文件
-├── public                  # 公共访问目录
-│   ├── assets              # 静态资源
-│   │   ├── css             # CSS文件
-│   │   ├── js              # JavaScript文件
-│   │   └── images          # 图片文件
-│   └── index.php           # 入口文件
-└── storage                 # 存储目录
-    ├── backups             # 数据库备份
-    ├── cache               # 缓存文件
-    ├── logs                # 日志文件
-    └── uploads             # 上传文件
-        └── avatars         # 用户头像
-```
-
-## 功能特性
-
-- MVC架构，清晰分离业务逻辑、数据访问和表示层
-- 用户认证系统，包括登录、注册、个人资料管理
-- 数据库操作，包括基本的CRUD操作和事务支持
-- 数据库备份和恢复功能
-- 主题切换功能（深色/浅色模式）
-- 响应式设计，适应不同屏幕尺寸
-- 错误处理和404页面
-
-## 安装说明
-
-1. 克隆仓库到本地
-2. 创建数据库并导入 `database/init.sql` 文件
-3. 配置数据库连接信息（`app/config/database.php`）
-4. 确保 `storage` 目录及其子目录可写
-5. 配置Web服务器，将根目录指向 `public` 目录
-
-## 使用说明
-
-### 用户认证
-
-- 访问 `/user/login` 登录系统
-- 访问 `/user/register` 注册新用户
-- 访问 `/user/profile` 管理个人资料
-- 访问 `/user/logs` 查看操作日志
-
-### 数据库管理
-
-- 访问 `/database` 管理数据库备份和恢复
-
-### 开发指南
-
-#### 创建新控制器
-
-```php
-<?php
-namespace app\controllers;
-
-class ExampleController extends Controller
-{
-    public function index()
-    {
-        $this->render('example/index', [
-            'page_title' => '示例页面',
-            'current_page' => 'example'
-        ]);
-    }
-}
-```
-
-#### 创建新模型
-
-```php
-<?php
-namespace app\models;
-
-class Example extends Model
-{
-    protected $table = 'examples';
-    
-    // 添加自定义方法
-}
-```
-
-#### 创建新视图
-
-```php
-<?php
-// 开始输出缓冲
-ob_start();
-?>
-
-<div class="page-header">
-    <h1>示例页面</h1>
-</div>
-
-<div class="page-card">
-    <div class="card-header">
-        <h3>示例内容</h3>
-    </div>
-    <div class="card-body">
-        <p>这是一个示例页面。</p>
-    </div>
-</div>
-
-<?php
-// 获取输出缓冲内容
-$content = ob_get_clean();
-
-// 包含主布局文件
-include_once __DIR__ . '/../layouts/main.php';
-?>
-```
-
-## 技术栈
-
-- PHP 7.4+
+- PHP 7.3+
 - MySQL 5.7+
 - HTML5/CSS3
 - JavaScript
 - Font Awesome 6
 
-## 许可证
+![843de98c-9f3e-4916-8aec-9a44a30465dd](https://github.com/user-attachments/assets/e4c3e66b-511a-49e4-84c9-a38ef918e8de)
+![770b6260-b523-4864-a1d4-504fe88a0ec9](https://github.com/user-attachments/assets/17212f83-5ee8-4746-8cfa-21e59059abee)
+![81ccc3b1-b125-4c94-b532-ed5e4b1bda1e](https://github.com/user-attachments/assets/ecdcdda7-c620-495a-8d1d-2aeba52c8e66)
+![bae3a4d1-7761-47af-831c-37b12e062ed8](https://github.com/user-attachments/assets/4fd8b383-bbe1-4487-9be1-ffa2ea904110)
+![b1f24c04-5785-4d5b-b64f-258b7994a952](https://github.com/user-attachments/assets/e1d8c7eb-b445-4bae-a43a-2c9a9131fd9c)
+![65fbac23-a50e-4d06-9312-7d17284a42f6](https://github.com/user-attachments/assets/4b813fce-890c-46f7-9a70-e0c2971ff1d8)
+![f9a22e23-d536-46b8-857c-6f3363f3fe4e](https://github.com/user-attachments/assets/e9dfb092-10d8-4605-8167-784a6931e497)
+![4827b6a6-42f4-4546-b657-b942165e74be](https://github.com/user-attachments/assets/9de8949f-ec85-4d36-a061-494f2928b77c)
+![d94b4bd5-6d2b-4dfa-bf83-1bd5630e4eeb](https://github.com/user-attachments/assets/0288bc12-a7ee-4545-b3f2-4f1e638fc1a5)
+![c571c624-437a-4f90-bef3-433fc10b66ca](https://github.com/user-attachments/assets/317ef7c1-22be-4b1e-bfdf-1f412bd1892e)
 
-MIT
+ 导入数据库修改数据库文件，就可以了
