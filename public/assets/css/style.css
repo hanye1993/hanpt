@@ -1,0 +1,318 @@
+/* 
+ * 主样式表
+ * 包含全局样式和通用组件样式
+ */
+
+/* 页面卡片样式 */
+.page-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* 页面标题样式 */
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.page-header p {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+.form-control-file {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: var(--text-color);
+}
+
+.form-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.form-actions {
+    margin-top: 25px;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 12px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    color: var(--text-color);
+    background-color: var(--light-color);
+    border-color: var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--border-color);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* 提示消息 */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+[data-theme="dark"] .alert-success {
+    color: #d4edda;
+    background-color: rgba(40, 167, 69, 0.2);
+    border-color: rgba(40, 167, 69, 0.3);
+}
+
+[data-theme="dark"] .alert-danger {
+    color: #f8d7da;
+    background-color: rgba(220, 53, 69, 0.2);
+    border-color: rgba(220, 53, 69, 0.3);
+}
+
+[data-theme="dark"] .alert-info {
+    color: #d1ecf1;
+    background-color: rgba(23, 162, 184, 0.2);
+    border-color: rgba(23, 162, 184, 0.3);
+}
+
+[data-theme="dark"] .alert-warning {
+    color: #fff3cd;
+    background-color: rgba(255, 193, 7, 0.2);
+    border-color: rgba(255, 193, 7, 0.3);
+}
+
+/* 表格样式 */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.table tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+/* 分页样式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.page-link.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* 选项卡样式 */
+.tabs {
+    width: 100%;
+}
+
+.tab-nav {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    overflow-x: auto;
+    padding-bottom: 1px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    color: var(--primary-color);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .page-card {
+        padding: 20px;
+    }
+    
+    .tab-nav {
+        flex-wrap: nowrap;
+    }
+    
+    .table th,
+    .table td {
+        padding: 10px;
+    }
+    
+    .pagination {
+        margin-top: 20px;
+    }
+    
+    .page-link {
+        padding: 6px 12px;
+        margin: 0 3px 6px;
+    }
+} 
